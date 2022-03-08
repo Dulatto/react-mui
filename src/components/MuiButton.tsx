@@ -1,5 +1,9 @@
-import {Button, Stack, IconButton, ButtonGroup} from '@mui/material'
+import {Button, Stack, IconButton, ButtonGroup, ToggleButtonGroup, ToggleButton} from '@mui/material'
 import SendIcon from '@mui/icons-material/Send';
+import FormatBoldIcon from '@mui/icons-material/FormatBold';
+import FormatItalicIcon from '@mui/icons-material/FormatItalic';
+import FormatUnderlinedIcon from '@mui/icons-material/FormatUnderlined';
+
 
 export const MuiButton = () => {
   return (
