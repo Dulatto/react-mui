@@ -1,4 +1,4 @@
-import {Stack, TextField} from '@mui/material';
+import {Stack, TextField, InputAdornment} from '@mui/material';
 
 export const MuiTextField = () => {
   return (
@@ -14,6 +14,17 @@ export const MuiTextField = () => {
         <Stack spacing={2} direction='row'>
         <TextField label='Form Input' required/>
         <TextField label='Password' type='password' helperText='Do not share your password with anyone' disabled/>
+        <TextField label='Read only' InputProps={{ readOnly: true }}/>
+        </Stack>
+        <Stack spacing={2} direction='row'>
+            <TextField label='Amount' 
+            InputProps={{ startAdornment: <InputAdornment position='start'>$</InputAdornment>,
+        }}
+            />
+            <TextField label='Weight' 
+             InputProps={{ endAdornment: <InputAdornment position='end'>kg</InputAdornment>,
+            }}
+            />
         </Stack>
     </Stack>
   )
