@@ -1,7 +1,7 @@
 import './App.css';
 import { MuiCard } from './components/MuiCard';
 //import { MuiAutocomplete } from './components/MuiAutocomplete';
-import { MuiLayout } from './components/MuiLayout';
+//import { MuiLayout } from './components/MuiLayout';
 //import { MuiRating } from './components/MuiRating';
 //import { MuiCheckbox } from './components/MuiCheckbox';
 //import { MuiSwitch } from './components/MuiSwitch';
