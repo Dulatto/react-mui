@@ -1,5 +1,6 @@
 import {AppBar, Toolbar, IconButton, Typography, Stack, Button, Menu, MenuItem}  from '@mui/material'
 import  CatchingPokemonIcon  from '@mui/icons-material/CatchingPokemon'
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown'
 import React, {useState} from 'react';
 
 export const MuiNavbar = () => {
@@ -31,6 +32,7 @@ export const MuiNavbar = () => {
                 aria-controls={open ? 'resources-menu' : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? 'true' : undefined}
+                endIcon = {<KeyboardArrowDownIcon/>}
                 >Resourses</Button>
               <Button color='inherit'>Login</Button>
           </Stack>
@@ -39,7 +41,15 @@ export const MuiNavbar = () => {
              anchorEl={anchorEl} 
              open={open} 
              MenuListProps ={{'aria-labelledby' : 'resources-button'}}
-             onClose={handleClose}>
+             onClose={handleClose}
+             anchorOrigin={{
+                 vertical:'bottom',
+                 horizontal: 'right'
+             }}
+             transformOrigin={{
+                vertical:'top',
+                horizontal: 'right'
+            }}>
              <MenuItem onClick={handleClose}>Blog</MenuItem>
              <MenuItem onClick={handleClose}>Podcast</MenuItem>
           </Menu>
