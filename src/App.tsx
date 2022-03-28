@@ -1,12 +1,13 @@
 import './App.css';
-import { MuiBottomNavigation } from './components/MuiBottomNavigation';
-import { MuiBreadcrumbs } from './components/MuiBreadcrumbs';
-import { MuiDrawer } from './components/MuiDrawer';
+import { MuiAvatar } from './components/MuiAvatar';
+//import { MuiBottomNavigation } from './components/MuiBottomNavigation';
+//import { MuiBreadcrumbs } from './components/MuiBreadcrumbs';
+//import { MuiDrawer } from './components/MuiDrawer';
 //import { MuiLink } from './components/MuiLink';
 //import { MuiAccordion } from './components/MuiAccordion';
 //import { MuiImageList } from './components/MuiImageList';
-import { MuiNavbar } from './components/MuiNavbar';
-import MuiSpeedDial from './components/MuiSpeedDial';
+//import { MuiNavbar } from './components/MuiNavbar';
+//import MuiSpeedDial from './components/MuiSpeedDial';
 //import { MuiCard } from './components/MuiCard';
 //import { MuiAutocomplete } from './components/MuiAutocomplete';
 //import { MuiLayout } from './components/MuiLayout';
@@ -39,8 +40,9 @@ function App() {
      <MuiNavbar />
    <MuiBreadcrumbs />
    <MuiDrawer />
-   <MuiSpeedDial />*/}
-   <MuiBottomNavigation />
+   <MuiSpeedDial />
+   <MuiBottomNavigation />*/}
+   <MuiAvatar />
     </div>
   );
 }

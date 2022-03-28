@@ -10,7 +10,9 @@ export const MuiBottomNavigation = () => {
     <BottomNavigation 
        sx={{width:'100%', position: 'absolute', bottom: 0}} 
        value={value} 
-       onChange={(event, newValue) =>{setValue(newValue)}}>
+       onChange={(event, newValue) =>{setValue(newValue)}}
+       showLabels
+       >
        <BottomNavigationAction label="Home" icon={<HomeIcon/>} />
        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon/>} />
        <BottomNavigationAction label="Profile" icon={<PersonIcon/>} />
