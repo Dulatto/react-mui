@@ -5,6 +5,7 @@ import { MuiDrawer } from './components/MuiDrawer';
 //import { MuiAccordion } from './components/MuiAccordion';
 //import { MuiImageList } from './components/MuiImageList';
 import { MuiNavbar } from './components/MuiNavbar';
+import MuiSpeedDial from './components/MuiSpeedDial';
 //import { MuiCard } from './components/MuiCard';
 //import { MuiAutocomplete } from './components/MuiAutocomplete';
 //import { MuiLayout } from './components/MuiLayout';
@@ -37,6 +38,7 @@ function App() {
      <MuiNavbar />
    <MuiBreadcrumbs />
    <MuiDrawer />
+   <MuiSpeedDial />
     </div>
   );
 }
