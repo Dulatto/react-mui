@@ -1,5 +1,11 @@
-import {Snackbar, Button} from '@mui/material'
-import {useState} from 'react'
+import {Snackbar, Button, Alert, AlertProps} from '@mui/material'
+import {useState, forwardRef} from 'react'
+
+const SnackbarAlert = forwardRef<HTMLDivElement, AlertProps>(
+    function SnackbarAlert(props, ref){
+        return <Alert elevation={6} ref={ref} {...props} />
+    }
+)
 
 export const MuiSnackbar = () => {
     const [open, setOpen] = useState(false);
@@ -16,7 +22,16 @@ export const MuiSnackbar = () => {
       message="Form submitted successfully" 
       autoHideDuration={4000}
       open={open}
-      onClose={handleClose}/>
+      onClose={handleClose}
+      anchorOrigin={{
+          vertical:'top',
+          horizontal: 'right',
+      }}/> 
+      <Snackbar open={open} onClose={handleClose} autoHideDuration={6000}>
+          <SnackbarAlert onClose={handleClose} severity="success">
+             Form submitted successfully!
+          </SnackbarAlert>
+      </Snackbar>
     </>
   )
 }
