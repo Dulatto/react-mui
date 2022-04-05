@@ -1,4 +1,6 @@
 import './App.css';
+import { LocalizationProvider } from '@mui/lab';
+import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { MuiAlert } from './components/MuiAlert';
 import { MuiDialog } from './components/MuiDialog';
 import { MuiLoadingButton } from './components/MuiLoadingButton';
@@ -33,6 +35,7 @@ import { MuiSnackbar } from './components/MuiSnackbar';
 
 function App() {
   return (
+    <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
      {/* <MuiTypography /> 
      <MuiButton/>
@@ -66,6 +69,7 @@ function App() {
    <MuiSkeleton />*/}
    <MuiLoadingButton />
     </div>
+    </LocalizationProvider>
   );
 }
 
