@@ -1,6 +1,7 @@
 import {Box, Tab} from '@mui/material';
 import { TabContext, TabList, TabPanel } from '@mui/lab';
 import {useState, useEffect} from 'react'
+import FavoriteIcon from '@mui/icons-material/Favorite'
 
 export const MuiTabs = () => {
     const [value, setValue] = useState('1');
@@ -11,16 +12,32 @@ export const MuiTabs = () => {
   return (
     <Box>
         <TabContext value={value}>
-            <Box sx={{borderBottom: 1, borderColor: 'divider'}}>
-                <TabList aria-label="Tabs example" onChange={handleChange}>
-                    <Tab label='tab one' value='1'/>
-                    <Tab label='tab two' value='2'/>
+            <Box sx={{borderBottom: 1, borderColor: 'divider', width: '300px'}}>
+                <TabList 
+                  aria-label="Tabs example" 
+                  onChange={handleChange} 
+                  textColor='secondary'
+                  indicatorColor='secondary'
+                  variant='scrollable'
+                  scrollButtons='auto'>
+                    <Tab 
+                      label='tab one' 
+                      value='1' 
+                      icon={<FavoriteIcon />} 
+                      iconPosition='start'/>
+                    <Tab label='tab two' value='2' disabled/>
                     <Tab label='tab three' value='3'/>
+                    <Tab label='tab four' value='4'/>
+                    <Tab label='tab five' value='5'/>
+                    <Tab label='tab six' value='6'/>
                 </TabList>
             </Box>
             <TabPanel value='1'>Panel one</TabPanel>
             <TabPanel value='2'>Panel two</TabPanel>
             <TabPanel value='3'>Panel three</TabPanel>
+            <TabPanel value='4'>Panel four</TabPanel>
+            <TabPanel value='5'>Panel five</TabPanel>
+            <TabPanel value='6'>Panel six</TabPanel>
         </TabContext>
     </Box>
   )
