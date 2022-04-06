@@ -9,6 +9,7 @@ import { MuiSkeleton } from './components/MuiSkeleton';
 import { MuiSnackbar } from './components/MuiSnackbar';
 import { MuiPicker } from './components/MuiPicker';
 import { MuiDatePangePicker } from './components/MuiDatePangePicker';
+import { MuiTabs } from './components/MuiTabs';
 // import { MuiChip } from './components/MuiChip';
 // import { MuiList } from './components/MuiList';
 // import { MuiTable } from './components/MuiTable';
@@ -70,8 +71,9 @@ function App() {
    <MuiProgress />
    <MuiSkeleton />
    <MuiLoadingButton />
-   <MuiPicker />*/}
-   <MuiDatePangePicker />
+   <MuiPicker />
+   <MuiDatePangePicker />*/}
+   <MuiTabs />
     </div>
     </LocalizationProvider>
   );
