@@ -1,11 +1,12 @@
-import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot} from '@mui/lab'
+import {Timeline, TimelineItem, TimelineSeparator, TimelineConnector, TimelineContent, TimelineDot, TimelineOppositeContent} from '@mui/lab'
 
 export const MuiTimeline = () => {
   return (
-    <Timeline>
+    <Timeline position="alternate">
         <TimelineItem>
+            <TimelineOppositeContent color="text.secondary">09:30 AM</TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot/>
+                <TimelineDot color='secondary' variant='outlined'/>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
@@ -14,8 +15,9 @@ export const MuiTimeline = () => {
         </TimelineItem>
 
         <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">10:00 AM</TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot/>
+                <TimelineDot color='secondary'/>
                 <TimelineConnector />
             </TimelineSeparator>
             <TimelineContent>
@@ -24,8 +26,9 @@ export const MuiTimeline = () => {
         </TimelineItem>
 
         <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">10:30 AM</TimelineOppositeContent>
             <TimelineSeparator>
-                <TimelineDot/>               
+                <TimelineDot color='secondary'/>               
             </TimelineSeparator>
             <TimelineContent>
                 City C
