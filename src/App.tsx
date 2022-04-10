@@ -12,6 +12,7 @@ import { MuiDatePangePicker } from './components/MuiDatePangePicker';
 import { MuiTabs } from './components/MuiTabs';
 import { MuiTimeline } from './components/MuiTimeline';
 import { MuiMasonry } from './components/MuiMasonry';
+import { MuiResponsiveness } from './components/MuiResponsiveness';
 // import { MuiChip } from './components/MuiChip';
 // import { MuiList } from './components/MuiList';
 // import { MuiTable } from './components/MuiTable';
@@ -76,8 +77,9 @@ function App() {
    <MuiPicker />
    <MuiDatePangePicker />
    <MuiTabs />
-   <MuiTimeline />*/}
-   <MuiMasonry />
+   <MuiTimeline />
+   <MuiMasonry />*/}
+   <MuiResponsiveness />
     </div>
     </LocalizationProvider>
   );
