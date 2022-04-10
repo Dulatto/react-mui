@@ -41,11 +41,14 @@ import { MuiResponsiveness } from './components/MuiResponsiveness';
 //import { MuiTypography } from './components/MuiTypography';
 
 const theme = createTheme({
+  status:{
+     danger: '#e53e3e',
+  },
   palette: {
     secondary:{
       main: colors.orange[500],
-    }
-  }
+    },
+  },
 });
 
 function App() {
