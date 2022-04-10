@@ -48,6 +48,10 @@ const theme = createTheme({
     secondary:{
       main: colors.orange[500],
     },
+    neutral:{
+      main: colors.grey[500],
+      darker: colors.grey[700]
+    }
   },
 });
 

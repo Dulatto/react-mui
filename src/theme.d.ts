@@ -12,4 +12,19 @@ declare module '@mui/material/styles'{
             danger: React.CSSProperties['color']
         }
     }
+
+    interface Palette {
+        neutral?: PaletteColor
+    }
+
+    interface PaletteOptions {
+        neutral?: PaletteColorOptions
+    }
+
+    interface SimplePaletteColorOptions{
+        darker?:string
+    }
+    interface PaletteColor{
+        darker?: string
+    }
 }
