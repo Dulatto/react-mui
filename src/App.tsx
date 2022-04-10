@@ -1,4 +1,5 @@
 import './App.css';
+import { createTheme, colors, ThemeProvider } from '@mui/material'
 import { LocalizationProvider } from '@mui/lab';
 import AdapterDateFns from '@mui/lab/AdapterDateFns';
 import { MuiAlert } from './components/MuiAlert';
@@ -39,8 +40,17 @@ import { MuiResponsiveness } from './components/MuiResponsiveness';
 //import { MuiTextField } from './components/MuiTextField';
 //import { MuiTypography } from './components/MuiTypography';
 
+const theme = createTheme({
+  palette: {
+    secondary:{
+      main: colors.orange[500],
+    }
+  }
+});
+
 function App() {
   return (
+    <ThemeProvider theme={theme}>
     <LocalizationProvider dateAdapter={AdapterDateFns}>
     <div className="App">
      {/* <MuiTypography /> 
@@ -82,6 +92,7 @@ function App() {
    <MuiResponsiveness />
     </div>
     </LocalizationProvider>
+    </ThemeProvider>
   );
 }
 
